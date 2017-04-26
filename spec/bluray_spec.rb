@@ -21,16 +21,16 @@ describe Bluray do
       expect(@bluray.name).to eq('Generic Bluray')
     end
     it 'is assigned a price' do
-      expect(@bluray.price).to eq(1.99)
+      expect(@bluray.price).to eq(4.49)
     end
     it 'is assigned a runtime' do
       expect(@bluray.runtime).to eq(95)
     end
     it 'is assigned a director' do
-      expect(@bluray.director).to eq(Director1)
+      expect(@bluray.director).to eq('Director1')
     end
     it 'is assigned a producer' do
-      expect(@bluray.producer).to eq(Producer1)
+      expect(@bluray.producer).to eq('Producer1')
     end
   end
   describe 'Accessors' do

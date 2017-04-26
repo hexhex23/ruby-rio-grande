@@ -2,13 +2,13 @@ require_relative 'item.rb'
 require 'pry'
 
 class Bluray < Item
-  attr_accessor :name, :price, :run_time, :director, :producer
+  attr_accessor :name, :price, :runtime, :director, :producer
 
-  def initialize(name, price, run_time, director, producer)
-    @run_time = run_time
+  def initialize(name, price, runtime, director, producer)
+    super(name, price)
+    @runtime = runtime
     @director = director
     @producer = producer
-    super(name, price)
   end
 end
 
